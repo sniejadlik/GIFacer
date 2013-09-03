@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GIFacer Prototyping</title>
+		<meta charset="utf-8" /> 
+		<LINK href="css/GIFacer.css" rel="stylesheet" type="text/css">
+	</head>
+	<body id='body'>
+		<section>
+			<article>
+				<div id="title">
+					<p class='title'>GIFacer Prototype</p>
+				</div>
+				
+				<video class="" autoplay></video>
+				<img  class="" width="320" height="240" class="snapshotImage" src="">
+				<div id="countDown" class="count_down">
+					<div id="countdownCaption" class="count_caption">-taking-<br>-snapshot-</div>
+					<div id="countdownTimer" class=" count_counter">-0-</div>
+				</div>
+				<canvas id="output" class="" width="320" height="240" style="display:none;"></canvas>
+				<form class="framingControls">
+					<p class="copy">FRAMING</p>
+					<div><p class="form_caption">ANGLE: <input type="range"  min="1" max="180" step="1" id="angle" value="1"><br>
+					  SLICES: <input type="number" min="0" max="15" step="1" id="slices" value="9"><br>
+					  FRAMES: <input type="number" min="0" max="15" step="1" id="frames" value="9"><br>
+					  CAPTURE RATE: <input type="number" min="0" max="1" step=".005" id="captureRate" value="1"><br>
+					  PLAYBACK RATE: <input type="range" min="0" max="1" step=".005" id="playbackRate" value="1"><br>
+					  ENCODING FRAME RATE: <input type="number" min="0" max="4" step=".05" value=".25" id="encodeRate"><br>
+					  </p>
+					</div>
+				</form>
+				<div class="buttons">
+					<button id="recordButton">RECORD</button>
+					<button id="gifButton">ENCODE</button>
+				</div>
+				<form class='levelsControls'>
+					<div class='copy'>Levels</div>
+				  <p class="form_caption">Low Threshold Min: <input type="range" min="0" max="255" step="1" value="0" id="lMin"><br>
+				  Low Threshold Max: <input type="range" min="0" max="255" step="1" id="lMax" value="30"><br>
+				  Low Replace Value: <input type="range" min="0" max="255" step="1" id="lValue" value="0"><br></p>
+				  <p class="form_caption">Mid Threshold Min: <input type="range" min="0" max="255" step="1" id="mMin" value="140"><br>
+				  Mid Threshold Max: <input type="range" min="0" max="255" step="1" id="mMax" value="160"><br>
+				  Mid Replace Value: <input type="range" min="0" max="255" step="1" id="mValue" value="150"><br></p>
+				  <p class="form_caption">High Threshold Min: <input type="range" min="0" max="255" step="1" id="hMin" value="230"><br>
+				  High Threshold Max: <input type="range" min="0" max="255" step="1" id="hMax" value="255"><br>
+				  High Replace Value: <input type="range" min="0" max="255" step="1" id="hValue" value="255"><br></p>
+				</form>
+			</article>
+			
+		</section>
+
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="dist/gif.js"></script>
+		<script src="dist/gif.worker.js"></script>
+		<script src="uncompressed/TweenMax.js"></script>
+		<script src="src/Stats.js"></script>
+		<script src="GIFacer.js"></script>
+	</body>
+</html>

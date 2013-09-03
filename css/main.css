@@ -1,0 +1,834 @@
+@font-face {
+    font-family: 'MINITypev2Regular';
+    src: url('fonts/mirg-webfont.eot');
+    src: url('fonts/mirg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mirg-webfont.woff') format('woff'),
+         url('fonts/mirg-webfont.ttf') format('truetype'),
+         url('fonts/mirg-webfont.svg#MINITypev2Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MINITypev2BoldRegular';
+    src: url('fonts/mibor-webfont.eot');
+    src: url('fonts/mibor-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mibor-webfont.woff') format('woff'),
+         url('fonts/mibor-webfont.ttf') format('truetype'),
+         url('fonts/mibor-webfont.svg#MINITypev2BoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MINITypev2HeadlineRegular';
+    src: url('fonts/mihd-webfont.eot');
+    src: url('fonts/mihd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mihd-webfont.woff') format('woff'),
+         url('fonts/mihd-webfont.ttf') format('truetype'),
+         url('fonts/mihd-webfont.svg#MINITypev2HeadlineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body {
+       background: #000;
+   }
+   
+   header#header-m {
+       margin: 0 0 35px;
+   }
+   
+       header#header-m img {
+           display: block;
+           margin: 0;
+       }
+   
+   header#header-d {
+       display: none;
+   }
+
+
+
+
+       html, body {
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           padding: 0;
+           display: block;
+       }
+
+        html.lt-ie8 body {
+            padding-top: 50px;
+        }
+
+       header#header-d {
+           display: block;
+           margin: 50px auto 47px;
+           width: 960px;
+       }
+
+           header#header-d img#header_logo {
+               display: block;
+               float: left;
+           }
+
+           header#header-d img#header_vid, header#header-d iframe {
+               float: right;
+               margin-top: 6px;
+           }
+
+   div#superContainer {
+       width: 960px;
+       display: block;
+       margin: 0 auto;
+       position: relative;
+   }
+
+        div#dealerContainer {
+            width: 960px;
+            display: block;
+            position: absolute;
+            left: 1500px;
+            top: 0;
+            transition: 1s;
+            -moz-transition: 1s; /* Firefox 4 */
+            -webkit-transition: 1s; /* Safari and Chrome */
+            -o-transition: 1s; /* Opera */
+        }
+
+            html.lt-ie8 div#dealerContainer {
+                left: 0px;
+                display: none;
+            }
+
+           #dealer_back {
+               width: 960px;
+               border-bottom: 1px solid #666;
+               margin: 0 0 40px;
+           }
+
+               #dealer_back a {
+                   /* font: bold 14px/26px Arial; */
+                   font: 18px/26px "MINITypev2HeadlineRegular";
+                   color: #666;
+                   text-decoration: none;
+                   text-transform: uppercase;
+               }
+
+               #dealer_details {
+                   margin: 0 0 43px;
+               }
+
+                   #dealer_who, #dealer_when, #dealer_where {
+                       float: left;
+                       display: block;
+                   }
+
+                   #dealer_who {
+                       width: 460px;
+                       padding-right: 30px;
+                   }
+                       #dealer_who h1 {
+                           margin: 0;
+                           padding: 0;
+                           /* font: bold 50px/50px Arial; */
+                           font: 50px/56px "MINITypev2BoldRegular";
+                           color: #fff;
+                           text-transform: uppercase;
+                       }
+
+                       #dealer_when,
+                       #dealer_where {
+                           width: 230px;
+                       }
+
+                       #dealer_when h2,
+                       #dealer_where h2 {
+                           color: #fff;
+                           /* font: bold 18px/30px arial; */
+                           font: 18px/20px "MINITypev2BoldRegular";
+                           margin: 3px 0 10px;
+                           padding: 0;
+                           text-transform: uppercase;
+                       }
+
+                       #dealer_when h3,
+                       #dealer_where h3 {
+                            /* font: bold 18px/30px arial; */
+                            font: 18px/30px "MINITypev2Regular";
+                            color: #fff;
+                            margin: 0;
+                            padding: 0;
+                       }
+
+               a#btn_rsvp {
+                   height: 41px;
+                   width: 399px;
+                   background: url("../img/desktop/btn-rsvp.png") 0 0 no-repeat;
+               }
+               
+               a#btn_dealer {
+                   height: 39px;
+                   width: 234px;
+                   background: url("../img/desktop/btn-dealer.png") 0 0 no-repeat;
+                   margin: 36px 0 0;
+               }
+               
+               a#btn_try_again {
+                   height: 39px;
+                   width: 270px;
+                   background: url("../img/desktop/btn-check.png") 0 0 no-repeat;
+               }
+
+       div#main {
+           width: 960px;
+           display: block;
+           position: absolute;
+           left: 0;
+           top: 0;
+           transition: 1s;
+           -moz-transition: 1s; /* Firefox 4 */
+           -webkit-transition: 1s; /* Safari and Chrome */
+           -o-transition: 1s; /* Opera */
+       }
+
+           body.dealerView div#dealerContainer {
+               left: 0;
+           }
+
+           body.dealerView div#main {
+               left: -1500px;
+           }
+
+           #main_copy {
+               width: 740px;
+               float: left;
+           }
+
+               div#main #main_copy p {
+                   /* font: normal 16px/26px arial; */
+                   font: 16px/26px "MINITypev2Regular";
+                   color: #fff;
+                   margin: 0 0 26px;
+                   padding: 0;
+               }
+
+           #main_logo {
+               width: 145px;
+               float: right;
+           }
+               #main_logo img {
+                   display: block;
+               }
+
+       table#d-dealer_list {
+           width: 960px;
+           margin: 0 0 8px;
+           padding: 0;
+           border: 0px;
+           /* font: normal 14px/26px arial; */
+           font: 14px/26px "MINITypev2Regular";
+           color: #fff;
+           text-align: left;
+       }
+
+           table#d-dealer_list tr { border-bottom: 1px solid #222; }
+               table#d-dealer_list tr#d-dealer_list-header { border-bottom: 1px solid #666; }
+               
+               html.lt-ie8 table#d-dealer_list tr td { border-bottom: 1px solid #222; }
+                      html.lt-ie8 table#d-dealer_list tr#d-dealer_list-header th { border-bottom: 1px solid #666; }
+
+               table#d-dealer_list tr#d-dealer_list-header th {
+                   color: #666;
+                   font: 14px/26px "MINITypev2BoldRegular";
+                   text-align: left;
+                   text-transform: uppercase;
+               }
+               
+                   table#d-dealer_list tr#d-dealer_list-header th a {
+                       color: #666;
+                       display: inline-block;
+                       font: 14px/26px "MINITypev2BoldRegular";
+                       padding-right: 15px;
+                       text-decoration: none;
+                       background: url("../img/desktop/d-sort-icon.png") right 9px no-repeat;
+                   }
+                       table#d-dealer_list tr#d-dealer_list-header th a:hover,
+                       table#d-dealer_list tr#d-dealer_list-header th a.sorted {
+                           color: #aaa;
+                       }
+
+                   th#d-dealer-name { width: 350px; padding-left: 20px; }
+                   th#d-dealer-location { width: 250px; }
+                   th#d-dealer-date { width: 170px; }
+
+               table#d-dealer_list tr td {
+                   color: #fff; 
+                   line-height: 39px;
+                   height: 39px;
+               }
+                   table#d-dealer_list tr td.name { padding-left: 20px; }
+
+                   table#d-dealer_list tr td.info a {
+                       color: #bf1a22;
+                       /* font-weight: bold; */
+                       font-family: "MINITypev2BoldRegular";
+                       text-decoration: none;
+                   }
+
+                   table#d-dealer_list tr td.info div.overlay_data {
+                       display: none;
+                   }
+
+       #overlay_template {
+           display: none;
+       }
+
+       #overlay_wrapper {
+           background: #000;
+           padding: 40px;
+           border: 9px #666 solid;
+       }
+
+           #overlay-header {
+               margin: 0 0 36px;
+           }
+               #overlay-header img {
+                   float: left;
+                   display: block;
+                   margin-right: 24px;
+               }
+
+               #overlay-header #overlay-header-copy {
+                   float: left;
+                   display: block;
+                   width: 200px;
+               }
+
+                   #overlay-header-copy h1 {
+                       color: #fff;
+                       /* font: bold 50px/42px "Arial"; */
+                       font: 50px/52px "MINITypev2BoldRegular";
+                       margin: 0 0 11px;
+                       padding: 0;
+                   }
+
+                   #overlay-header-copy h3 {
+                       /* font: 15px/21px "Arial"; */
+                       font: 15px/21px "MINITypev2Regular";
+                       color: #999;
+                       margin: 0;
+                       padding: 0;
+                   }
+           
+           #overlay-copy h1 {
+               /* font: bold 34px/34px "Arial"; */
+               font: 34px/34px "MINITypev2BoldRegular";
+               color: #fff;
+               width: 300px;
+               margin: 0 0 23px;
+               padding: 0;
+           }
+           
+           #overlay-copy h2 {
+               /* font: bold 13px/19px "arial"; */
+               font: 13px/19px "MINITypev2BoldRegular";
+               color: #999;
+               margin: 0;
+               padding: 0;
+               text-transform: uppercase;
+           }
+
+           #overlay-copy h3 {
+               /* font: bold 18px/22px "Arial"; */
+               font: 18px/22px "MINITypev2BoldRegular";
+               color: #fff;
+               margin: 0;
+               padding: 0;
+               text-transform: uppercase;
+           }
+
+           #overlay-copy h4, #overlay-copy p {
+               /* font: normal 18px/22px "Arial"; */
+               font: 18px/22px "MINITypev2Regular";
+               color: #fff;
+               margin: 0;
+               padding: 0;
+           }
+
+               #overlay-copy h4 { margin: 0 0 24px; }
+               #overlay-copy p span { display: block; }
+               #overlay-copy.error_copy p {
+                   font: 18px/27px "MINITypev2Regular";
+                   margin: 0 0 23px;
+               }
+
+           #overlay_wrapper form {
+               margin: 26px 0 0;
+           }
+           
+                #overlay_wrapper form fieldset {
+                    position: relative;
+                }
+                
+                    #overlay_wrapper form fieldset span {
+                        color: #B30D16;
+                        /* font: 22px arial; */
+                        font: 17px "MINITypev2Regular";
+                        left: 14px;
+                        position: absolute;
+                        top: 9px;
+                    }
+
+               #overlay_wrapper form input[type=text], #overlay_wrapper form textarea {
+                   background: none repeat scroll 0 0 #FFFFFF;
+                   border: 0 none;
+                   display: block;
+                   height: 16px;
+                   /* font: normal 15px "Arial"; */
+                   font: 15px "MINITypev2Regular";
+                   color: #666;
+                   margin: 0 0 10px;
+                   padding: 12px 14px;
+                   width: 302px;
+               }
+               
+                    #overlay_wrapper form fieldset input[type=text],
+                    #overlay_wrapper form fieldset select {
+                        padding: 12px 14px 12px 26px;
+                    }
+                        #overlay_wrapper form fieldset input[type=text] {
+                            width: 290px;
+                        }
+                        
+                        #overlay_wrapper form fieldset select {
+                            padding: 12px 14px 12px 26px;
+                            text-indent: -1px;
+                        }
+                        
+                        html.webkit #overlay_wrapper form fieldset select {
+                            padding: 12px 14px 12px 0;
+                            text-indent: 18px;
+                            width: 330px;
+                        }
+                        
+                        html.lt-ie8 #overlay_wrapper form select {
+                            height: 26px;
+                            margin: 20px 0;
+                        }
+               
+                    #overlay_wrapper form textarea {
+                        height: 100px;
+                    }
+               
+                    #overlay_wrapper form input[type=text].enteredText, #overlay_wrapper form textarea.enteredText {
+                        /* font: bold 15px "Arial"; */
+                        font: 15px "MINITypev2BoldRegular";
+                        color: #000;
+                    }
+               
+            #overlay_wrapper form select {
+                background: #fff;
+                border: 0 none;
+                color: #666;
+                display: block;
+                font: 15px "MINITypev2Regular";
+                height: 40px;
+                margin: 0 0 10px;
+                padding: 12px 12px 10px;
+                width: 330px;
+            }
+
+            #overlay_wrapper #schedule{
+                margin: 25px 0 22px;
+                color: #fff;
+            }
+            #schedule input[type=radio] {
+                width: 20px;
+                display:inline;
+            }
+                #overlay_wrapper .req_txt{
+                    color:#999;
+                    font: 13px "MINITypev2Regular";
+                    margin-top:25px;
+                }
+                
+                    #overlay_wrapper .req_txt span {
+                        color: #b30d16;
+                    }
+
+            .red { color: #f00; }
+
+            .highlighted {
+                background:url(../img/desktop/erroricon.png) 15px 10px no-repeat #f9ebb4 !important;
+                text-indent: 16px;
+                /* font: bold 15px "Arial"; */
+                font: 15px "MINITypev2BoldRegular";
+                color: #000;
+            }
+       /* ==|== colorbox =========================================================== */
+
+       /*
+           ColorBox Core Style:
+           The following CSS is consistent between example themes and should not be altered.
+       */
+       #colorbox, #cboxOverlay, #cboxWrapper {position:absolute; top:0; left:0; z-index:9999;}
+        #cboxOverlay, #cboxWrapper {overflow: hidden; } /* exception below for external close handle */
+           #colorbox { overflow: visible !important; } 
+       #cboxOverlay{position:fixed; width:100%; height:100%; background: url("../img/desktop/bg-colorbox-overlay.png") 0 0 repeat;}
+            html.lt-ie8 #cboxOverlay { width: 99% !important; }
+       #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+       #cboxContent{position:relative;}
+       #cboxLoadedContent{overflow:auto;}
+       #cboxTitle{margin:0;}
+       #cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+       #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+       .cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+       /* 
+           User Style:
+           Change the following styles to modify the appearance of ColorBox.  They are
+           ordered & tabbed in a way that represents the nesting of the generated HTML.
+       */
+       #cboxClose {
+           display: none;
+       }
+
+
+       /*
+         The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+         when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+         See: http://jacklmoore.com/notes/ie-transparency-problems/
+       */
+       .cboxIE #cboxTopLeft,
+       .cboxIE #cboxTopCenter,
+       .cboxIE #cboxTopRight,
+       .cboxIE #cboxBottomLeft,
+       .cboxIE #cboxBottomCenter,
+       .cboxIE #cboxBottomRight,
+       .cboxIE #cboxMiddleLeft,
+       .cboxIE #cboxMiddleRight {
+           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+       }
+
+       #colorbox.iframe_config iframe {
+       	overflow: hidden;
+       }
+
+       #colorbox.iframe_config #cboxClose {
+       	background: transparent;
+       }
+
+       #cboxCloseHandle {
+           height: 28px;
+           width: 26px;
+           background: url("/events/nnse/rsvp/img/desktop/btn-colorbox-close.gif") left top no-repeat #666;
+           text-indent: -9999px;
+           position: absolute;
+           top: 0;
+           right: -26px;
+           z-index: 9999;
+           opacity: 0;
+           -webkit-border-top-right-radius: 1px;
+           -webkit-border-bottom-right-radius: 1px;
+           -moz-border-radius-topright: 1px;
+           -moz-border-radius-bottomright: 1px;
+           border-top-right-radius: 1px;
+           border-bottom-right-radius: 1px;
+       }
+
+           html.lt-ie8 #cboxCloseHandle {
+               top: 22px;
+           }
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+a.sprite {
+    text-indent: -9999px;
+    text-decoration: none;
+    display: block;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
